@@ -8,7 +8,7 @@ public class Main {
         int A_english_score = sc.nextInt();
         int B_english_score = sc.nextInt();
 
-        if(A_math_score > B_math_score && A_english_score > B_english_score){
+        if(A_math_score >= B_math_score && A_english_score >= B_english_score){
             System.out.print("1");
         } else{
             System.out.print("0");

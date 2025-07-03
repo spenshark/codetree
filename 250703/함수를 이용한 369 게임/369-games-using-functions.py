@@ -2,7 +2,8 @@ a, b = map(int, input().split())
 cnt = 0
 
 def is_div_3(num):
-    if(num // 10 % 3 == 0 or num % 10 % 3 == 0 or num % 3 == 0):
+    numstr = str(num)
+    if('3' in numstr or '6' in numstr or '9' in numstr or num%3==0):
         return True
 
 for i in range(a, b+1):

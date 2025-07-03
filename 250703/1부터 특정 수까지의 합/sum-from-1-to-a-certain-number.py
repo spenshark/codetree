@@ -1,3 +1,3 @@
 n = int(input())
 
-print((n**2+n)/20)
+print((n**2+n)//20)

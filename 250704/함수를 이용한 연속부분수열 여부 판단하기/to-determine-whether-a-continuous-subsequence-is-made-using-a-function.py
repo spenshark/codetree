@@ -11,6 +11,8 @@ def sequence(a, b):
             if(i < n1-1 and j < n2-1):
                 i += 1
                 j += 1
+            else:
+                break
 
     return False
 

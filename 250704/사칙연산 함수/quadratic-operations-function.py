@@ -9,6 +9,6 @@ elif o == '-':
 elif o == '*':
     print(f'{a} {o} {c} = {a*c}')
 elif o == '/':
-    print(f'{a} {o} {c} = {a/c}')
+    print(f'{a} {o} {c} = {a/c:.f}')
 else:
     print("False")

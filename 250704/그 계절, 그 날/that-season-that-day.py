@@ -37,7 +37,7 @@ def season(Y, M, D):
         return 'Spring'
     
     if(M <= 8):
-        return 'Summal'
+        return 'Summer'
     
     if(M <= 11):
         return 'Fall'

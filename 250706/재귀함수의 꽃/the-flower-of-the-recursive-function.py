@@ -1,7 +1,7 @@
 N = int(input())
 
 def temp(N):
-    if N == 1:
+    if N == 0:
         return
 
     print(N, end=' ')

@@ -6,10 +6,7 @@ def gcd(a,b):
     if a % b == 0:
         return b
     
-    if a > b:
-        return gcd(b, a%b)
-    else:
-        return gcd(a, b%a)
+    return gcd(b, a%b)
 
 def temp(n):
     global lcm
@@ -24,7 +21,7 @@ def temp(n):
     num1 = arr[n-1]
     num2 = arr[n-2]
 
-    lcm = (num1 * num2) // gcd(num1, num2)
+    lcm = (num1 * num2) // gcd(max(num1, num2), min(num1, num2))
     arr[n-2] = lcm
 
     return temp(n-1)

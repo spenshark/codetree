@@ -13,6 +13,10 @@ def gcd(a,b):
 
 def temp(n):
     global lcm
+
+    if len(arr) == 1:
+        return arr[n-1]
+
     if n == 1:
         return
     

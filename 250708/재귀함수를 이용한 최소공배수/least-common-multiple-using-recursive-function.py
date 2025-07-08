@@ -15,7 +15,8 @@ def temp(n):
     global lcm
 
     if len(arr) == 1:
-        return arr[n-1]
+        lcm = arr[n-1]
+        return
 
     if n == 1:
         return

@@ -8,7 +8,7 @@ cnt = 0
 for i in str:
     if i.startswith(t):
         cnt += 1
-        if cnt == 3:
+        if cnt == k:
             print(i)
             break
 

@@ -8,7 +8,7 @@ class p:
 
 
 p1 = p()
-p2 = p('leebros', '88')
+p2 = p(product_name, product_code)
 
 print('product', p1.code, 'is', p1.name)
 print('product', p2.code, 'is', p2.name)

@@ -18,10 +18,11 @@ for i in range(1, m2):
 
 minute2 += d2
 
-if d1 > d2:  # 10일(월) 9일(일) -> 1
-    cnt -= (d1 - d2 - 1) % 7
+if d1 > d2:  #  9일(월) 10일(화) -> 1
+    cnt = (d1 - d2 - 1) % 7
 elif d2 > d1:
-    cnt -= (d2 - d1 - 1) % 7
+    cnt = (d1 - d2 - 1) % 7
+    cnt = -cnt
 else:
     cnt = 1
 

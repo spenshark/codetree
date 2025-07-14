@@ -9,5 +9,8 @@ for i in range(n):
             max = cnt
         cnt = 0
     cnt += 1
+    if i == n-1:
+        if cnt > max:
+            max = cnt
 
 print(max)

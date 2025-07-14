@@ -20,10 +20,12 @@ minute2 += d2
 
 if d1 > d2:
     cnt = (d1 - d2) % 7
-else:
+elif d2 > d1:
     cnt = (d2 - d1) % 7
+else:
+    cnt = 2
 
-cnt = cnt - 1 if cnt > 0 else cnt + 7
+cnt = cnt - 1 if cnt > 0 else cnt + 6
 
 print(day_of_the_weeks[cnt])
 

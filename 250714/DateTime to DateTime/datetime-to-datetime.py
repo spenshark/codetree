@@ -13,4 +13,7 @@ else:
     day = a - 11 - 1
     total_m = day * 1440 + m - m11 + 1440
 
-print(total_m)
+if total_m < 0:
+    print(-1)
+else:
+    print(total_m)

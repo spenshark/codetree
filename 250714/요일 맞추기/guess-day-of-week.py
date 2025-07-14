@@ -18,14 +18,12 @@ for i in range(1, m2):
 
 minute2 += d2
 
-if d1 > d2:
-    cnt = (d1 - d2) % 7
+if d1 > d2:  # 10일(월) 9일(일) -> 1
+    cnt -= (d1 - d2 - 1) % 7
 elif d2 > d1:
-    cnt = (d2 - d1) % 7
+    cnt -= (d2 - d1 - 1) % 7
 else:
-    cnt = 2
-
-cnt = cnt - 1 if cnt > 0 else cnt + 6
+    cnt = 1
 
 print(day_of_the_weeks[cnt])
 
